@@ -15,7 +15,7 @@ const bodyParser = require("body-parser")
         app.use(bodyParser.urlencoded({extended: false}))
         app.use(bodyParser.json())
     // Conexão com o Banco de Dados MySQL
-        const sequelize = new Sequelize("syh", "root", "igormiras123", {
+        const sequelize = new Sequelize("syh", "root", "", {
             host: "localhost",
             dialect: "mysql"
         })
